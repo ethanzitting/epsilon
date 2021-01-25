@@ -1,7 +1,31 @@
-import {change} from './module.js';
+function $(element) {
+  return document.querySelector(element);
+}
 
-const body = document.querySelector('body');
+const main = $('main');
 
-body.innerHTML = "Changed";
+const home = $('#home');
+const services = $('#services');
+const about = $('#about');
+const contact = $('#contact');
+const testimonials = $('#testimonials');
 
-change(body);
+home.addEventListener('click', () => {
+  main.innerHTML = "Home Page Content";
+})
+
+services.addEventListener('click', () => {
+  main.innerHTML = "Services Content";
+})
+
+about.addEventListener('click', () => {
+  main.innerHTML = "About Us Content";
+})
+
+contact.addEventListener('click', () => {
+  main.innerHTML = "Contact Us Content";
+})
+
+testimonials.addEventListener('click', () => {
+  main.innerHTML = "Testimonials Content";
+})
