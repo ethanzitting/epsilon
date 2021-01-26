@@ -1,8 +1,105 @@
-.flex {
-  display: flex;
-}
+/*
+=======================================
+TABLE OF CONTENTS
+=======================================
+
+-links and buttons
+-typography
+-general tools and styling
+-header
+-main
+-footer
+
+*/
+
+/*
+======================================
+LINKS AND BUTTONS
+======================================
+*/
 
 .link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/*
+======================================
+TYPOGRAPHY AND COLOR SCHEME
+======================================
+*/
+
+body {
+  font-family: Lato;
+  font-weight: 700;
+  color: #932432;
+  background-color: #F3F3F3;
+}
+
+/*
+======================================
+GENERAL TOOLS AND SPACING
+======================================
+*/
+
+body {
+  position: relative;
+  min-height: 80vh;
+  top: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+/*
+======================================
+HEADER
+======================================
+*/
+
+header {
+  height: 80px;
+  width: 100%;
+  display: inline-flex;
+  position: fixed;
+  top: 0px;
+  align-items: center;
+  box-shadow: 4px 0 6px 2px grey;
+
+  background-color: #F3F3F3;
+}
+
+header>div {
+  margin: 5px;
+}
+
+.divider {
+  margin-right: auto;
+}
+
+/*
+======================================
+MAIN
+======================================
+*/
+
+main {
+  margin-top: 120px;
+  padding-bottom: 40px; /* for footer */
+}
+
+/*
+======================================
+FOOTER
+======================================
+*/
+
+footer {
+  height: 40px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
 }
