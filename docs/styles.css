@@ -102,12 +102,12 @@ header {
   align-items: center;
   box-shadow: 4px 0 6px 2px lightgrey;
   background-color: #F3F3F3;
-  font-size: 20px;
+  font-size: 2.5vw;
 }
 
 header>div {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .divider {
@@ -139,4 +139,5 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 0px;
+  font-size: 2.5vw;
 }
