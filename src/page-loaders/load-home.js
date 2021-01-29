@@ -1,0 +1,5 @@
+let loadHome = () => {
+
+}
+
+export { loadHome }

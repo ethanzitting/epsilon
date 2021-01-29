@@ -23,6 +23,13 @@ LINKS AND BUTTONS
   text-decoration: underline;
 }
 
+#contact {
+  background-color: #3C1874;
+  padding: 1em;
+  border-radius: 0.5em;
+  color: #F3F3F3;
+}
+
 /*
 ======================================
 TYPOGRAPHY AND COLOR SCHEME
@@ -32,8 +39,12 @@ TYPOGRAPHY AND COLOR SCHEME
 body {
   font-family: Lato;
   font-weight: 700;
-  color: #932432;
+  color: #DE354C;
   background-color: #F3F3F3;
+}
+
+.secondary {
+  color: #932432;
 }
 
 /*
@@ -42,9 +53,27 @@ GENERAL TOOLS AND SPACING
 ======================================
 */
 
+/*  * is a universal selector. *:before and *:after are included to ensure that every possible element is selected */
+*, *:before, *:after {
+	/* Alters the box model of all elements. Defualt is content-box:
+		content-box: realWidth = margin + borders + padding + width), 
+		padding-box: realWidth = margin + borders + width, [Deprecated, do not use]
+		border-box: realWidth = margin + width
+	 */
+	-webkit-box-sizing: content-box; /* Chrome and Safari browzers */
+	   -moz-box-sizing: content-box; /* Mozilla Firefox */
+	        box-sizing: content; /* The default */
+}
+
+
+html {
+	overflow-y: scroll;
+}
+
 body {
   position: relative;
-  min-height: 80vh;
+  min-height: 79vh;
+  max-width: 100vw;
   top: 0;
 }
 
@@ -59,19 +88,22 @@ HEADER
 */
 
 header {
-  height: 80px;
-  width: 100%;
+  height: 15vh;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: inline-flex;
   position: fixed;
   top: 0px;
   align-items: center;
-  box-shadow: 4px 0 6px 2px grey;
-
+  box-shadow: 4px 0 6px 2px lightgrey;
   background-color: #F3F3F3;
+  font-size: 20px;
 }
 
 header>div {
-  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .divider {
@@ -85,7 +117,7 @@ MAIN
 */
 
 main {
-  margin-top: 120px;
+  margin: 20vh 10vw 0 10vw;
   padding-bottom: 40px; /* for footer */
 }
 
@@ -96,8 +128,9 @@ FOOTER
 */
 
 footer {
-  height: 40px;
-  width: 100%;
+  height: 10vh;
+  margin: 2vh 5vw;
+  width: 90vw;
   display: inline-flex;
   align-items: center;
   position: absolute;
