@@ -34,9 +34,22 @@ TYPOGRAPHY AND COLOR SCHEME
 ======================================
 */
 
-body {
-  font-family: Lato;
+h1 {
+  font-size: 3vw;
   font-weight: 700;
+  font-family: Lato;
+}
+
+h3 {
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: Lato;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.75vw;
   color: #2c8375;
   background-color: #F3F3F3;
 }
@@ -85,6 +98,12 @@ body {
 
 .flex {
   display: flex;
+}
+
+.tile-img {
+  width: 20vw;
+  height: auto;
+
 }
 
 /*

@@ -1,6 +1,10 @@
+import { loadHome } from './page-loaders/load-home.js';
+
 function $(element) {
   return document.querySelector(element);
 }
+
+loadHome();
 
 const main = $('main');
 
@@ -11,7 +15,7 @@ const contact = $('#contact');
 const testimonials = $('#testimonials');
 
 home.addEventListener('click', () => {
-  main.innerHTML = "Home Page Content";
+  loadHome();
 })
 
 services.addEventListener('click', () => {
