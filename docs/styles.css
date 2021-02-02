@@ -24,10 +24,8 @@ LINKS AND BUTTONS
 }
 
 #contact {
-  background-color: #3C1874;
   padding: 1em;
   border-radius: 0.5em;
-  color: #F3F3F3;
 }
 
 /*
@@ -39,12 +37,16 @@ TYPOGRAPHY AND COLOR SCHEME
 body {
   font-family: Lato;
   font-weight: 700;
-  color: #DE354C;
+  color: #2c8375;
   background-color: #F3F3F3;
 }
 
+.primary {
+  color: #359d8e;
+}
+
 .secondary {
-  color: #932432;
+  color: #2c8375;
 }
 
 .tertiary {
@@ -112,6 +114,11 @@ header>div {
 
 .divider {
   margin-right: auto;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
 }
 
 /*
