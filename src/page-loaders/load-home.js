@@ -67,7 +67,7 @@ let loadHome = () => {
     parentId: '#pitch-cont',
     html: `<h3>Why Us?</h3>
           <p>Simply put, we offer a complete solution for a flat rate
-           lower than any you will fiind elsewhere. A small check and a phone call
+           lower than any you will find elsewhere. A small check and a phone call
            will result in you being the owner of your own small business. We can even
            walk you through what we are doing so that you can begin to familiarize
            yourself with the inner workings of modern businesses.</p>`,

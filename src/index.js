@@ -1,4 +1,6 @@
 import { loadHome } from './page-loaders/load-home.js';
+import { loadContact } from './page-loaders/load-contact.js';
+import { loadServices } from './page-loaders/load-services.js';
 
 function $(element) {
   return document.querySelector(element);
@@ -19,7 +21,7 @@ home.addEventListener('click', () => {
 })
 
 services.addEventListener('click', () => {
-  main.innerHTML = "Services Content";
+  loadServices();
 })
 
 about.addEventListener('click', () => {
@@ -27,7 +29,7 @@ about.addEventListener('click', () => {
 })
 
 contact.addEventListener('click', () => {
-  main.innerHTML = "Contact Us Content";
+  loadContact();
 })
 
 testimonials.addEventListener('click', () => {

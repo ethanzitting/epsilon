@@ -138,6 +138,7 @@ header>div {
 .logo {
   height: 70px;
   width: auto;
+  margin-right: 1px solid yellow;
 }
 
 /*
