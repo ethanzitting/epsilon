@@ -35,3 +35,19 @@ contact.addEventListener('click', () => {
 testimonials.addEventListener('click', () => {
   main.innerHTML = "Testimonials Content";
 })
+
+// Powers Hamburger Menu Icon
+const menuBtn = document.querySelector('.menu-btn');
+const headerCont = document.querySelector('.header-cont');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add('open');
+    headerCont.hidden = false;
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen =  false;
+    headerCont.hidden = true;
+  }
+});
