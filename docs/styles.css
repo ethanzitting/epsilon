@@ -23,10 +23,6 @@ LINKS AND BUTTONS
   text-decoration: underline;
 }
 
-#contact {
-  padding: 1em;
-  border-radius: 0.5em;
-}
 
 /*
 ======================================
@@ -55,7 +51,11 @@ body {
 }
 
 header {
-  font-size: 4vw;
+  font-size: 8vw;
+}
+
+.invert {
+  color: #f3F3F3;
 }
 
 .primary {
@@ -68,6 +68,10 @@ header {
 
 .tertiary {
   color: #283747;
+}
+
+.back-tertiary {
+  background-color:#283747;
 }
 
 /*
@@ -121,26 +125,45 @@ header {
   padding-left: 17.5vw;
 }
 
-.navbar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
-
 .long-logo {
   width: 80vw;
   height: auto;
 }
 
+.navBar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.navBtns {
+  top: 0px;
+  padding-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: -100vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.shown {
+  left: 0px;
+}
+
+.navBtns>div {
+  margin: 10px;
+}
+
 .menu-btn {
   position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn_burger {
@@ -148,7 +171,7 @@ header {
   height: 6px;
   background: #000000;
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn_burger::before,
@@ -159,7 +182,7 @@ header {
   height: 6px;
   background: #000000;
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn_burger::before {
@@ -172,16 +195,15 @@ header {
 
 /* Animation */
 .menu-btn.open .menu-btn_burger {
-  transform: translateX(-50px);
   background: transparent;
 }
 
 .menu-btn.open .menu-btn_burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg)
 }
 
 .menu-btn.open .menu-btn_burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg)
 }
 
 
