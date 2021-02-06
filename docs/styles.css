@@ -175,6 +175,7 @@ header {
   position: fixed;
   left: -100vw;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .shown {
@@ -187,7 +188,7 @@ header {
 
 .menu-btn {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,7 +251,29 @@ MAIN
 main {
   margin: 10vh 5vw 0 5vw;
   padding-bottom: 2.5rem; /* for footer */
-  
+  position: relative;
+}
+
+main>div {
+  background-color: #f3f3f3;
+  margin: 20px;
+  width: 80vw;
+  position: relative;
+  z-index: -1;
+}
+
+.background-img {
+  position: fixed;
+  top: -5vh;
+  left: -5vw;
+  z-index: -2;
+  width: 100vw;
+  height: auto;
+}
+
+.background-img>img {
+  width: 100%;
+  height: auto;
 }
 
 /*
