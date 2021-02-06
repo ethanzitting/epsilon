@@ -30,28 +30,55 @@ TYPOGRAPHY AND COLOR SCHEME
 ======================================
 */
 
-h1 {
-  font-size: 3vw;
-  font-weight: 700;
+/* Desktop Font Formatting */ 
+body {
+  font-size: 20px;
+  font-weight: 300;
   font-family: Lato;
 }
 
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
 h3 {
-  font-size: 2vw;
+  font-size: 28px;;
   font-weight: 500;
   font-family: Lato;
 }
 
-body {
-  font-family: Montserrat;
-  font-weight: 300;
-  font-size: 1.75vw;
-  color: #2c8375;
-  background-color: #F3F3F3;
+.navBtns {
+  font-size: 40px;
+  font-weight: 700;
 }
 
-header {
-  font-size: 8vw;
+
+/* Mobile Font Formatting */
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  .secondary-text {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* Color Styling */
+
+body {
+  color: #2c8375;
+  background-color: #F3F3F3;
 }
 
 .invert {
