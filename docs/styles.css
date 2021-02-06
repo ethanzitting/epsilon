@@ -117,9 +117,19 @@ HEADER
 */
 
 header {
+  position: relative;
+  padding-left: 17.5vw;
+}
+
+.navbar {
   position: fixed;
   top: 0px;
-  background-color: #F3F3F3;
+  left: 0px;
+}
+
+.long-logo {
+  width: 80vw;
+  height: auto;
 }
 
 .menu-btn {
@@ -174,10 +184,6 @@ header {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-.long-logo {
-  width: 95vw;
-  height: auto;
-}
 
 
 
