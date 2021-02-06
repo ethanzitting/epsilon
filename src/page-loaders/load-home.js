@@ -38,7 +38,7 @@ let loadHome = () => {
   // Load intro image
   makeDiv({
     parentId: '#intro-cont',
-    html: `<img class="tile-img" src="./images/school-smile.jpg"/>`,
+    html: `<img class="tile-img" src="./images/dog-1.jpg"/>`,
     classList: [
       'tile'
     ]
@@ -56,7 +56,7 @@ let loadHome = () => {
   // Load Pitch Image
   makeDiv({
     parentId: '#pitch-cont',
-    html: `<img class="tile-img" src="./images/smile.jpg"/>`,
+    html: `<img class="tile-img" src="./images/dog-2.jpg"/>`,
     classList: [
       'tile'
     ]
