@@ -6,7 +6,7 @@ let loadHome = () => {
   // Clear existing page html
   main.innerHTML = '';
 
-  // Load Parallaxing background image
+  /* Load Parallaxing background image
   makeDiv({
     parentId: 'main',
     childId: 'backgroundImg',
@@ -14,7 +14,7 @@ let loadHome = () => {
     classList: [
       'background-img'
     ]
-  })
+  })*/
 
   // Load Intro Title
   makeDiv({
