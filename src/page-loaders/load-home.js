@@ -19,8 +19,7 @@ let loadHome = () => {
   // Load Intro Title
   makeDiv({
     parentId: 'main',
-    childId: 'title',
-    html: '<h1>Epsilon Integrated Solutions</h1>',
+    childId: 'title'
   })
 
   // Load Intro Container

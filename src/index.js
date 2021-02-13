@@ -14,6 +14,7 @@ loadHome();
 // Select Hamburger Menu Icon and Navbar Button Container Element
 const menuBtn = $('.menu-btn');
 const navBtns = $('.navBtns');
+const blurPanel = $('.blur-panel');
 
 // Select main page content container element.
 const main = $('main');
@@ -23,37 +24,55 @@ const home = $('#home');
 const services = $('#services');
 const about = $('#about');
 const contact = $('#contact');
-const testimonials = $('#testimonials');
+const pastWork = $('#past-work');
 
 // The navbar menu will be closed on page load
 let menuOpen = false;
+
+let openMenu = () => {
+  // Add the class 'shown' to the navBar element, scrolling it right into view.
+  // Also add 'open' to the menuBtn turning it into an 'X'.
+  menuBtn.classList.add('open');
+  navBtns.classList.add('shown');
+  blurPanel.classList.add('blurred');
+  blurPanel.classList.remove('unresponsive');
+  menuOpen = true;
+}
+
+let closeMenu = () => {
+  // Turn the menuBtn back into a hamburger.
+  menuBtn.classList.remove('open');
+  // Scroll the navbar left out of view.
+  navBtns.classList.remove('shown');
+  // Unblur the screen
+  blurPanel.classList.remove('blurred');
+  // Allow Click Through of blur panel
+  blurPanel.classList.add('unresponsive');
+  menuOpen = false;
+}
 
 // When the hamburger icon is clicked...
 menuBtn.addEventListener('click', () => {
   // If the navbar is currently closed...
   if (!menuOpen) {
-    // Add the class 'shown' to the navBar element, scrolling it right into view.
-    // Also add 'open' to the menuBtn turning it into an 'X'.
-    menuBtn.classList.add('open');
-    navBtns.classList.add('shown');
-    menuOpen = true;
+    openMenu();
   } else {
-    // Scroll the navbar left out of view.
-    // Turn the menuBtn back into a hamburger.
-    menuBtn.classList.remove('open');
-    navBtns.classList.remove('shown');
-    menuOpen =  false;
+    closeMenu();
   }
 });
+
+blurPanel.addEventListener('click', () => {
+  if (menuOpen) {
+    closeMenu();
+  }
+})
 
 home.addEventListener('click', () => {
   // Load the Home page content.
   loadHome();
 
   // Also close the navbar menu.
-  menuBtn.classList.remove('open');
-  navBtns.classList.remove('shown');
-  menuOpen =  false;
+  closeMenu();
 })
 
 services.addEventListener('click', () => {
@@ -61,9 +80,7 @@ services.addEventListener('click', () => {
   loadServices();
 
   // Also close the navbar menu.
-  menuBtn.classList.remove('open');
-  navBtns.classList.remove('shown');
-  menuOpen =  false;
+  closeMenu();
 })
 
 about.addEventListener('click', () => {
@@ -71,9 +88,7 @@ about.addEventListener('click', () => {
   main.innerHTML = "About Us Content";
 
   // Also close the navbar menu.
-  menuBtn.classList.remove('open');
-  navBtns.classList.remove('shown');
-  menuOpen =  false;
+  closeMenu();
 })
 
 contact.addEventListener('click', () => {
@@ -81,18 +96,14 @@ contact.addEventListener('click', () => {
   loadContact();
 
   // Also close the navbar menu.
-  menuBtn.classList.remove('open');
-  navBtns.classList.remove('shown');
-  menuOpen =  false;
+  closeMenu();
 })
 
-testimonials.addEventListener('click', () => {
+pastWork.addEventListener('click', () => {
   // load the testimonials content
-  main.innerHTML = "Testimonials Content";
+  main.innerHTML = "Past Work Content";
 
   // Also close the navbar menu.
-  menuBtn.classList.remove('open');
-  navBtns.classList.remove('shown');
-  menuOpen =  false;
+  closeMenu();
 })
 
