@@ -2,6 +2,8 @@
 import { loadHome } from './page-loaders/load-home.js';
 import { loadContact } from './page-loaders/load-contact.js';
 import { loadServices } from './page-loaders/load-services.js';
+import { loadPastWork } from './page-loaders/load-past-work.js';
+import { loadMeet } from './page-loaders/meet-the-team.js';
 
 // Simple Tool to make my code shorter.
 function $(element) {
@@ -24,7 +26,7 @@ const home = $('#home');
 const services = $('#services');
 const contact = $('#contact');
 const pastWork = $('#past-work');
-const podcast = $('#podcast');
+const meetTheTeam = $('#meet-the-team');
 
 // The navbar menu will be closed on page load
 let menuOpen = false;
@@ -83,10 +85,17 @@ services.addEventListener('click', () => {
   closeMenu();
 })
 
-podcast.addEventListener('click', () => {
-  // Load the About Us content
-  main.innerHTML = "Podcast Content";
+pastWork.addEventListener('click', () => {
+  // load the testimonials content
+  loadPastWork();
 
+  // Also close the navbar menu.
+  closeMenu();
+})
+
+meetTheTeam.addEventListener('click', () => {
+  // Load the About Us content
+  loadMeet();
   // Also close the navbar menu.
   closeMenu();
 })
@@ -98,12 +107,3 @@ contact.addEventListener('click', () => {
   // Also close the navbar menu.
   closeMenu();
 })
-
-pastWork.addEventListener('click', () => {
-  // load the testimonials content
-  main.innerHTML = "Past Work Content";
-
-  // Also close the navbar menu.
-  closeMenu();
-})
-
