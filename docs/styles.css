@@ -19,13 +19,7 @@ TABLE OF CONTENTS
 - Drop About, move to home page
 - Break Services into dropdown on menu, separate pages for each category.
 - Add Meet the Team?
-- Blog
 - Less Text on home
-- Make text not selectable, but inputs and links selectable;
-  -webkit-user-select: none;  Safari *       
-  -moz-user-select: none;  Firefox 
-  -ms-user-select: none;  IE10+/Edge 
-  user-select: none;  Standard 
 /*
 ======================================
 LINKS AND BUTTONS
@@ -223,6 +217,7 @@ header {
   height: 200vh;
   width: 100vw;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .blurred {
@@ -304,24 +299,14 @@ main {
   position: relative;
 }
 
-main>div {
-  background-color: #f3f3f3;
-  margin: 20px;
-  width: 80vw;
-  position: relative;
+.coneDiv {
+  position: absolute;
+  left: 30vw;
+  text-align: center;
 }
 
-.background-img {
-  position: fixed;
-  top: -5vh;
-  left: -5vw;
-  width: 100vw;
-  height: auto;
-}
-
-.background-img>img {
-  width: 100%;
-  height: auto;
+.cone {
+  width: 15vw;
 }
 
 /*

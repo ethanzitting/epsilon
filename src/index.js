@@ -22,9 +22,9 @@ const main = $('main');
 // Select each idividual navbar button
 const home = $('#home');
 const services = $('#services');
-const about = $('#about');
 const contact = $('#contact');
 const pastWork = $('#past-work');
+const podcast = $('#podcast');
 
 // The navbar menu will be closed on page load
 let menuOpen = false;
@@ -83,9 +83,9 @@ services.addEventListener('click', () => {
   closeMenu();
 })
 
-about.addEventListener('click', () => {
+podcast.addEventListener('click', () => {
   // Load the About Us content
-  main.innerHTML = "About Us Content";
+  main.innerHTML = "Podcast Content";
 
   // Also close the navbar menu.
   closeMenu();
