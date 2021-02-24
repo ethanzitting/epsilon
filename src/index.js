@@ -23,52 +23,27 @@ const contact = $('#contact');
 const pastWork = $('#past-work');
 const meetTheTeam = $('#meet-the-team');
 
-// The navbar menu will be closed on page load
-let menuOpen = false;
-
-let openMenu = () => {
-  menuOpen = true;
-}
-
-let closeMenu = () => {
-  menuOpen = false;
-}
-
 home.addEventListener('click', () => {
   // Load the Home page content.
   loadHome();
-
-  // Also close the navbar menu.
-  closeMenu();
 })
 
 services.addEventListener('click', () => {
   // Load the Services content
   loadServices();
-
-  // Also close the navbar menu.
-  closeMenu();
 })
 
 pastWork.addEventListener('click', () => {
   // load the testimonials content
   loadPastWork();
-
-  // Also close the navbar menu.
-  closeMenu();
 })
 
 meetTheTeam.addEventListener('click', () => {
   // Load the About Us content
   loadMeet();
-  // Also close the navbar menu.
-  closeMenu();
 })
 
 contact.addEventListener('click', () => {
   // Load Contact Content
   loadContact();
-
-  // Also close the navbar menu.
-  closeMenu();
 })

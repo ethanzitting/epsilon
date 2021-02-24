@@ -18,10 +18,6 @@ LINKS AND BUTTONS
 ======================================
 */
 
-.link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
 
 /*
@@ -31,50 +27,12 @@ TYPOGRAPHY AND COLOR SCHEME
 */
 
 /* Desktop Font Formatting */ 
-body {
-  font-size: 20px;
-  font-weight: 300;
-  font-family: Lato;
-}
 
-.secondary-text {
-  font-size: 18px;
-}
-
-h1 {
-  font-size: 34px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 28px;;
-  font-weight: 500;
-  font-family: Lato;
-}
-
-.navBtns {
-  font-size: 40px;
-  font-weight: 700;
-}
 
 
 /* Mobile Font Formatting */
 @media only screen and (max-width: 800px) {
-  body {
-    font-size: 16px;
-  }
-
-  .secondary-text {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 21px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
+  
 }
 
 
@@ -120,41 +78,10 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   top: 0;
-  z-index: -1;
-}
-
-header {
-  z-index: 2;
-}
-
-.menu-btn {
-  z-index: 5;
-}
-
-.navBtns {
-  z-index: 3;
-}
-
-main {
-  z-index: 1;
-}
-
-footer {
-  z-index: 1;
 }
 
 .flex {
   display: flex;
-}
-
-.unresponsive {
-  pointer-events: none;
-}
-
-.tile-img {
-  width: 20vw;
-  height: auto;
-
 }
 
 /*
@@ -163,57 +90,6 @@ HEADER
 ======================================
 */
 
-header {
-  position: relative;
-}
-
-.long-logo {
-  width: 50vw;
-  max-width: 340px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-.menu-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.menu-btn_burger {
-  width: 30px;
-  height: 4px;
-  background: #000000;
-  transition: all .3s ease-in-out;
-}
-
-.menu-btn_burger::before,
-.menu-btn_burger::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: #000000;
-  border-radius: 5px;
-  transition: all .3s ease-in-out;
-}
-
-.menu-btn_burger::before {
-  transform: translateY(-10px);
-}
-
-.menu-btn_burger::after {
-  transform: translateY(10px);
-}
 
 
 /*
@@ -245,13 +121,3 @@ main {
 FOOTER
 ======================================
 */
-
-footer {
-  height: 2.5rem;
-  margin: 2vh 15vw;
-  width: 90vw;
-  display: inline-flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0px;
-}
