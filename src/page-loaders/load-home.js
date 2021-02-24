@@ -9,7 +9,13 @@ let loadHome = () => {
   makeDiv({
     parentId: 'main',
     html: `<img class="cone" src="./images/cone.png"/>
-          <p>Home Page Under Construction</p>`,
+          <p>Home Page Under Construction</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">col</div>
+              <div class="col">col</div>
+            </div>
+          </div>`,
     classList: [
       'coneDiv'
     ]

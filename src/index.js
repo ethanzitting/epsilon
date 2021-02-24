@@ -13,11 +13,6 @@ function $(element) {
 // Default Page to Load is the Home Page
 loadHome();
 
-// Select Hamburger Menu Icon and Navbar Button Container Element
-const menuBtn = $('.menu-btn');
-const navBtns = $('.navBtns');
-const blurPanel = $('.blur-panel');
-
 // Select main page content container element.
 const main = $('main');
 
@@ -32,42 +27,12 @@ const meetTheTeam = $('#meet-the-team');
 let menuOpen = false;
 
 let openMenu = () => {
-  // Add the class 'shown' to the navBar element, scrolling it right into view.
-  // Also add 'open' to the menuBtn turning it into an 'X'.
-  menuBtn.classList.add('open');
-  navBtns.classList.add('shown');
-  blurPanel.classList.add('blurred');
-  blurPanel.classList.remove('unresponsive');
   menuOpen = true;
 }
 
 let closeMenu = () => {
-  // Turn the menuBtn back into a hamburger.
-  menuBtn.classList.remove('open');
-  // Scroll the navbar left out of view.
-  navBtns.classList.remove('shown');
-  // Unblur the screen
-  blurPanel.classList.remove('blurred');
-  // Allow Click Through of blur panel
-  blurPanel.classList.add('unresponsive');
   menuOpen = false;
 }
-
-// When the hamburger icon is clicked...
-menuBtn.addEventListener('click', () => {
-  // If the navbar is currently closed...
-  if (!menuOpen) {
-    openMenu();
-  } else {
-    closeMenu();
-  }
-});
-
-blurPanel.addEventListener('click', () => {
-  if (menuOpen) {
-    closeMenu();
-  }
-})
 
 home.addEventListener('click', () => {
   // Load the Home page content.

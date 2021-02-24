@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Epsilon</title>
-
-    <!-- Sets CSS -->
-    <link href="reset.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
-
-    <!-- Imports Google Links -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
     <!-- Makes wepage more responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+    <!-- Sets CSS -->
+    <!-- My CSS--><link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    <!-- Imports Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    
     <!--Sets Favicon-->
     <link
       rel="apple-touch-icon"
@@ -35,34 +34,54 @@
     />
     <link rel="manifest" href="./site.webmanifest" />
 
-    <!-- Introduces Javascript-->
-    <script src="main.js" defer></script>
+    
+
+    <!-- Font Awsome for Icons --><script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Epsilon</title>
   </head>
+
   <body>
-    <header>
-      <div class="navBar">
-        <div class='menu-btn'>
-          <div class='menu-btn_burger'></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" hrf="#"><img src="images/long-logo.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="past-work">Past Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="meet-the-team">Meet The Team</a>
+            </li>
+          </ul>
         </div>
-        <div class="navBtns invert back-tertiary">
-          <div id="home" class="link">Home</div>
-          <div id="services" class="link">Services</div>
-          <div id="past-work" class="link">Past Work</div>
-          <div id="meet-the-team" class="link">Meet the Team</div>
-          <div id="contact" class="link">Contact</div>
-        </div>
-        <div class="blur-panel unresponsive"></div>
-      </div>
-      <img class="long-logo"src="./images/long-logo.png"/>
-    </header>
+      
+    </nav>
+
     <main>
+    <!-- This div holds the content for each page and is generated with JS -->
     </main>
-    <footer class="flex">
-      <div class="divider">
-      </div>
-      <div class="secondary-text">
-        © 2021 Epsilon Integrated Solutions / All Rights Reserved
-      </div>
+
+    <footer>
+      <!-- Javascript That Powers Bootstrap-->
+    <script src="main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
     </footer>
+
   </body>
 </html>
