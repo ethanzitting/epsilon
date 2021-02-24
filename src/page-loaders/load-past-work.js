@@ -60,15 +60,16 @@ let loadPastWork = () => {
   let portHTML = ``;
 
   for (let i = 0; i < designs.length; i += 3) {
+    const rowClasses = 'col-sm-12 col-md-6 col-lg-4 px-1 overflow-hidden';
     portHTML += `
     <div class="row gx-2">
-      <div class="col-4 px-1 overflow-hidden">
+      <div class="${rowClasses}">
         <img src="${designsSrc}${designs[i]}" height="200px">
       </div>
-      <div class="col-4 px-1 overflow-hidden">
+      <div class="${rowClasses}">
         <img src="${designsSrc}${designs[i + 1]}" height="200px">
       </div>
-      <div class="col-4 px-1 overflow-hidden">
+      <div class="${rowClasses}">
         <img src="${designsSrc}${designs[i + 2]}" height="200px">
       </div>
     </div>`
