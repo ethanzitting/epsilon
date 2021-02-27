@@ -18,7 +18,9 @@ LINKS AND BUTTONS
 ======================================
 */
 
-
+.nav-link {
+  cursor: pointer;
+}
 
 /*
 ======================================
@@ -114,7 +116,16 @@ main {
   width: 15vw;
 }
 
+/* Past Work */
+#port-cont img{
+  max-height: 200px;
+  cursor: pointer;
+  margin: 5px;
+}
 
+.prev-cont {
+  
+}
 
 /*
 ======================================

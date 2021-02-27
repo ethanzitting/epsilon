@@ -23,27 +23,56 @@ const contact = $('#contact');
 const pastWork = $('#past-work');
 const meetTheTeam = $('#meet-the-team');
 
+// Clear "active" class from nav-links
+const clearActive = () => {
+  home.classList.remove("active");
+  services.classList.remove("active");
+  contact.classList.remove("active");
+  pastWork.classList.remove("active");
+  meetTheTeam.classList.remove("active");
+}
+
 home.addEventListener('click', () => {
   // Load the Home page content.
   loadHome();
+
+  // Clear active class from other nav-links and apply here
+  clearActive();
+  home.classList.add("active");
 })
 
 services.addEventListener('click', () => {
   // Load the Services content
   loadServices();
+
+  // Clear active class from other nav-links and apply here
+  clearActive();
+  services.classList.add("active");
 })
 
 pastWork.addEventListener('click', () => {
   // load the testimonials content
   loadPastWork();
+
+  // Clear active class from other nav-links and apply here
+  clearActive();
+  pastWork.classList.add("active");
 })
 
 meetTheTeam.addEventListener('click', () => {
   // Load the About Us content
   loadMeet();
+
+  // Clear active class from other nav-links and apply here
+  clearActive();
+  meetTheTeam.classList.add("active");
 })
 
 contact.addEventListener('click', () => {
   // Load Contact Content
   loadContact();
+
+  // Clear active class from other nav-links and apply here
+  clearActive();
+  contact.classList.add("active");
 })

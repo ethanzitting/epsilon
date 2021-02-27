@@ -1,21 +1,23 @@
 import { makeDiv } from '../make-div.js';
 
+// Simple Tool to make my code shorter.
+function $(element) {
+  return document.querySelector(element);
+}
+
 let loadPastWork = () => {
-  const main = document.querySelector('main');
+  const main = $('main');
 
   const designsSrc = "./images/designs/";
   const designs = [
     "alive.jpg",
-    "atom-01.jpg",
     "bcs2.jpg",
     "bitr.jpg",
     "cheer.jpg",
-    "dionysuslogo.jpg",
     "dtp-us.jpg",
     "feedback.jpg",
     "food.jpg",
     "gt4home.jpg",
-    "l-h-01.jpg",
     "lawnranger.jpg",
     "man.jpg",
     "mca2.jpg",
@@ -51,34 +53,66 @@ let loadPastWork = () => {
       </div>
     </div>
 
+    <hr>
+
     <!-- Container for Professional Work -->
-    <div class="container-fluid" id="port-cont">
+    <div class="d-flex flex-wrap justify-content-center" id="port-cont">
+    </div>
+
+    <!-- Container for Image Preview -->
+    <div class="prev-cont">
     </div>
   `
 
+  const portCont = $("#port-cont");
+
   // Generate Dynamic HTML for Images
   let portHTML = ``;
+  const prevCont = $(".prev-cont");
 
-  for (let i = 0; i < designs.length; i += 3) {
-    const rowClasses = 'col-sm-12 col-md-6 col-lg-4 px-1 overflow-hidden';
-    portHTML += `
-    <div class="row gx-2">
-      <div class="${rowClasses}">
-        <img src="${designsSrc}${designs[i]}" height="200px">
-      </div>
-      <div class="${rowClasses}">
-        <img src="${designsSrc}${designs[i + 1]}" height="200px">
-      </div>
-      <div class="${rowClasses}">
-        <img src="${designsSrc}${designs[i + 2]}" height="200px">
-      </div>
-    </div>`
+
+  for (let i = 0; i < designs.length; i++) {
+    const portElem = makeDiv({
+      parentId: '#port-cont',
+      childId: `img-${i}-div`,
+      classList: [
+        'img-div'
+      ]
+    });
+
+    portElem.innerHTML = `<img id="img-${i}" class="img-thumbnail" src="${designsSrc}${designs[i]}">`;
+    
+    const img = $(`#img-${i}`);
+
+    /*
+    portElem.innerHTML += `
+        <div class="modal fade" id="img-${i}-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+    img.addEventListener('click', () => {
+      $(`#img-${i}-modal`).modal('show');
+    });
+    */
+    
   }
-
-  // Plug Images into Page DOM
-  const portCont = document.querySelector("#port-cont");
-  portCont.innerHTML = portHTML;
-  
 }
 
 export { loadPastWork }
