@@ -1,12 +1,20 @@
 import { makeDiv } from '../make-div.js';
+import bootstrap from 'bootstrap'
 
-// Simple Tool to make my code shorter.
-function $(element) {
-  return document.querySelector(element);
-}
+
 
 let loadPastWork = () => {
   const main = $('main');
+
+  var script = document.createElement('script');
+  script.src = 'https://code.jquery.com/jquery-3.5.1.min.js';
+  script.type = 'text/javascript';
+  document.getElementsByTagName('head')[0].appendChild(script);
+
+  // Simple Tool to make my code shorter.
+  function $(element) {
+    return document.querySelector(element);
+  }
 
   const designsSrc = "./images/designs/";
   const designs = [
@@ -83,8 +91,9 @@ let loadPastWork = () => {
     portElem.innerHTML = `<img id="img-${i}" class="img-thumbnail" src="${designsSrc}${designs[i]}">`;
     
     const img = $(`#img-${i}`);
+    console.log(img);
 
-    /*
+    
     portElem.innerHTML += `
         <div class="modal fade" id="img-${i}-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -109,9 +118,8 @@ let loadPastWork = () => {
 
     img.addEventListener('click', () => {
       $(`#img-${i}-modal`).modal('show');
-    });
-    */
-    
+      console.log(`#img-${i}-modal`);
+    })
   }
 }
 

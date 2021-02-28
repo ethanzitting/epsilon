@@ -4,6 +4,7 @@ import { loadContact } from './page-loaders/load-contact.js';
 import { loadServices } from './page-loaders/load-services.js';
 import { loadPastWork } from './page-loaders/load-past-work.js';
 import { loadMeet } from './page-loaders/meet-the-team.js';
+import bootstrap from 'bootstrap';
 
 // Simple Tool to make my code shorter.
 function $(element) {

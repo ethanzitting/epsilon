@@ -1,4 +1,5 @@
 import { makeDiv } from '../make-div.js';
+import bootstrap from 'bootstrap'
 
 let loadMeet = () => {
   const main = document.querySelector('main');
@@ -14,8 +15,6 @@ let loadMeet = () => {
       'coneDiv'
     ]
   })
-
-  
 }
 
 export { loadMeet }
