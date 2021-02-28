@@ -1,1 +1,6 @@
-/node_modules
+#Ignore Everything
+/node_modules/*
+
+#Except for Bootstrap and Jquery
+!node_modules/bootstrap
+!node_modules/jquery
