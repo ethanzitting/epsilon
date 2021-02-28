@@ -6,10 +6,6 @@ import { loadPastWork } from './page-loaders/load-past-work.js';
 import { loadMeet } from './page-loaders/meet-the-team.js';
 import bootstrap from 'bootstrap';
 
-// Simple Tool to make my code shorter.
-function $(element) {
-  return document.querySelector(element);
-}
 
 // Default Page to Load is the Home Page
 loadHome();
@@ -33,7 +29,7 @@ const clearActive = () => {
   meetTheTeam.classList.remove("active");
 }
 
-home.addEventListener('click', () => {
+$('#home').click(() => {
   // Load the Home page content.
   loadHome();
 
@@ -42,7 +38,7 @@ home.addEventListener('click', () => {
   home.classList.add("active");
 })
 
-services.addEventListener('click', () => {
+$('#services').click(() => {
   // Load the Services content
   loadServices();
 
@@ -51,7 +47,7 @@ services.addEventListener('click', () => {
   services.classList.add("active");
 })
 
-pastWork.addEventListener('click', () => {
+$('#past-work').click(() => {
   // load the testimonials content
   loadPastWork();
 
@@ -60,7 +56,7 @@ pastWork.addEventListener('click', () => {
   pastWork.classList.add("active");
 })
 
-meetTheTeam.addEventListener('click', () => {
+$('#meet-the-team').click(() => {
   // Load the About Us content
   loadMeet();
 
@@ -69,7 +65,7 @@ meetTheTeam.addEventListener('click', () => {
   meetTheTeam.classList.add("active");
 })
 
-contact.addEventListener('click', () => {
+$('#contact').click(() => {
   // Load Contact Content
   loadContact();
 
