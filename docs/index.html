@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
     <!-- Bootstrap CSS -->
-    <link href="./bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <!-- My CSS -->
     <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
     
@@ -53,23 +53,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item active" id="home">
-              <span class="nav-link">Home</span>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
 
             <li class="nav-item" id="services">
-              <span class="nav-link">Services</span>
+              <a href="services.html" class="nav-link">Services</a>
             </li>
 
             <li class="nav-item" id="contact">
-              <span class="nav-link">Contact</span>
+              <a href="contact.html" class="nav-link">Contact</a>
             </li>
 
             <li class="nav-item" id="past-work">
-              <span class="nav-link">Past Work</span>
+              <a href="past-work.html" class="nav-link">Past Work</a>
             </li>
 
             <li class="nav-item" id="meet-the-team">
-              <span class="nav-link">Meet the Team</span>
+              <a href="meet-the-team.html" class="nav-link">Meet the Team</a>
             </li>
           </ul>
         </div>
@@ -78,6 +78,10 @@
 
     <main>
     <!-- This div holds the content for each page and is generated with JS -->
+      <div class="coneDiv">
+        <img class="cone" src="./images/cone.png"/>
+        <p>Home Page Under Construction</p>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -105,7 +109,7 @@
         </div>
       </div>
     </div>
-    -->
+    
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
@@ -130,12 +134,13 @@
         </div>
       </div>
     </div>
+    -->
     </footer>
 
     <!-- JQuery JS-->
-    <script src="./jquery.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
     <!-- Bootstrap JS-->
-    <script src="./bootstrap.bundle.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- My JS -->
     <script src="./main.js"></script>
   </body>
