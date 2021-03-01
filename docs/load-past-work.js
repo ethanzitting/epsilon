@@ -38,22 +38,22 @@ let loadPastWork = () => {
     {
       link: "alive.jpg",
       title: "",
-      alt: ""
+      alt: "Man with broken chains on hands reaching up."
     },
     {
       link: "bcs2.jpg",
       title: "",
-      alt: ""
+      alt: "Banner for 'The Bitcoin Store'."
     },
     {
       link: "bitr.jpg",
       title: "",
-      alt: ""
+      alt: "Flag with bitcoin on it."
     },
     {
       link: "cheer.jpg",
       title: "",
-      alt: ""
+      alt: "Holiday Cheer Bonus Informational Poster."
     },
     {
       link: "dtp-us.jpg",
@@ -173,8 +173,11 @@ let loadPastWork = () => {
     <!-- Title -->
     <div class="container-fluid">
       <div class="row text-center">
-        <div class="col-12">
-          <h1>Design Work</h1>
+        <div class="col-6">
+          <h1>Designs</h1>
+        </div>
+        <div class="col-6">
+          <h1>Websites</h1>
         </div>
       </div>
     </div>
