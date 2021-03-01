@@ -1,3 +1,8 @@
+
+const $ = (element) => {
+  return document.querySelector(element);
+}
+
 const makeDiv = (divObject) => {
   const parent = document.querySelector(`${divObject.parentId}`);
   const child = document.createElement("div");
@@ -197,37 +202,38 @@ let loadPastWork = () => {
       ]
     });
 
-    portElem.innerHTML = `<img id="img-${i}" class="img-thumbnail" src="${designsSrc}${designs[i].link}" alt="${designsSrc}${designs[i].alt}">`;
+    portElem.innerHTML = `
+      <button data-toggle="modal" data-target="#img-${i}-modal" style="border: 1px; background: none;">
+        <img id="img-${i}" class="img-thumbnail" src="${designsSrc}${designs[i].link}" alt="${designsSrc}${designs[i].alt}">
+      </button  
+      `;
+
     
     const img = $(`#img-${i}`);
-    console.log(img);
 
     
     portElem.innerHTML += `
-        <div class="modal fade" id="img-${i}-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
+      <div class="modal fade" id="img-${i}-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">${designs[i].title}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="img-preview">
+              <img id="img-${i}" class="" src="${designsSrc}${designs[i].link}" alt="${designsSrc}${designs[i].alt}">
+            </div
           </div>
         </div>
+      </div>
+    </div>
       `;
 
     img.addEventListener('click', () => {
       $(`#img-${i}-modal`).modal('show');
-      console.log(`#img-${i}-modal`);
     })
   }
 }

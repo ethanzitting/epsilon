@@ -117,15 +117,18 @@ main {
 }
 
 /* Past Work */
-#port-cont img{
+#port-cont button img{
   max-height: 200px;
+  max-width: 80vw;
   cursor: pointer;
   margin: 5px;
 }
 
-.prev-cont {
-  
+.img-preview img {
+  max-height: 80vh;
+  max-width: 100%;
 }
+
 
 /*
 ======================================
