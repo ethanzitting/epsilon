@@ -129,6 +129,11 @@ main {
   max-width: 100%;
 }
 
+.website-thumbnail {
+  height: 40vh;
+  width: auto;
+  margin: 5px;
+}
 
 /*
 ======================================

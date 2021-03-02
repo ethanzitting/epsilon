@@ -206,6 +206,7 @@ main.innerHTML = `
       <button class="nav-link active" aria-current="page" id="design-tab" href="" style="border: none;">Designs</button>
       <button class="nav-link" id="website-tab" href="" style="border: none;">Websites</button>
   </ul>
+  <hr>
 
   <!-- Container for Professional Work -->
   <div class="d-flex flex-wrap justify-content-center" id="port-cont">
@@ -311,13 +312,13 @@ const loadWebsites = () => {
     if (mobileCheck) {
       websiteElem.innerHTML = `
       <a href="${websites[i].url}" target="_blank">
-        <img id="website-${i}-img" class="img-thumbnail" src="${websites[i].mobileSrc}" alt="${designs[i].alt}">
+        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websites[i].mobileSrc}" alt="${designs[i].alt}">
       </a>
       `
     } else {
       websiteElem.innerHTML = `
-      <a href="${websites[i].url}" target="_blank">
-        <img id="website-${i}-img" class="img-thumbnail" src="${websites[i].desktopSrc}" alt="${designs[i].alt}">
+      <a href="${websites[i].url}" class="" target="_blank">
+        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websites[i].desktopSrc}" alt="${designs[i].alt}">
       </a>
       `
     }
