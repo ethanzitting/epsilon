@@ -203,8 +203,8 @@ const websites = [
 main.innerHTML = `
   <!-- Title -->
   <ul class="navbar nav-pills nav-justified">
-      <button class="nav-link active" aria-current="page" id="design-tab" href="" style="border: none;">Designs</button>
-      <button class="nav-link" id="website-tab" href="" style="border: none;">Websites</button>
+      <button class="nav-link active back-primary" aria-current="page" id="design-tab" href="" style="border: none;">Designs</button>
+      <button class="nav-link primary" id="website-tab" href="" style="border: none;">Websites</button>
   </ul>
   <hr>
 
@@ -222,8 +222,10 @@ const loadDesigns = () => {
   const designTab = $("#design-tab");
   const websiteTab = $("#website-tab");
 
-  websiteTab.classList.remove('active');
-  designTab.classList.add('active');
+  websiteTab.classList.remove('active', 'back-primary');
+  websiteTab.classList.add('primary');
+  designTab.classList.add('active', 'back-primary');
+  designTab.classList.remove('primary');
 
   websiteTab.removeAttribute("aria-current");
   designTab.setAttribute("aria-current", "page");
@@ -283,8 +285,10 @@ const loadWebsites = () => {
   const designTab = $("#design-tab");
   const websiteTab = $("#website-tab");
 
-  designTab.classList.remove('active');
-  websiteTab.classList.add('active');
+  designTab.classList.remove('active', 'back-primary');
+  designTab.classList.add('primary');
+  websiteTab.classList.add('active', 'back-primary');
+  websiteTab.classList.remove('primary');
 
   designTab.removeAttribute("aria-current");
   websiteTab.setAttribute("aria-current", "page");

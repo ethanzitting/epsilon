@@ -50,19 +50,28 @@ body {
 }
 
 .primary {
-  color: #359d8e;
+  color: #359d8e !important;
 }
 
+.back-primary {
+  background-color: #359d8e !important;
+}
+
+
 .secondary {
-  color: #2c8375;
+  color: #2c8375 !important;
+}
+
+.back-secondary {
+  background-color:#2c8375 !important;
 }
 
 .tertiary {
-  color: #283747;
+  color: #283747 !important;
 }
 
 .back-tertiary {
-  background-color:#283747;
+  background-color:#283747 !important;
 }
 
 /*
@@ -134,6 +143,7 @@ main {
   width: auto;
   margin: 5px;
 }
+
 
 /*
 ======================================
