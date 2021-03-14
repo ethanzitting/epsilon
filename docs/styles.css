@@ -143,7 +143,29 @@ body, .home-main {
   margin: 0 !important;
 }
 
+/* Services */
+.section-title {
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
 
+.section-title:hover, .section-title:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #283747;
+  box-shadow: 0 0 3px 0.05rem #283747;
+}
+
+.space {
+  margin: 10px auto;
+}
+
+.gut {
+  padding: 0;
+}
 
 /* Past Work */
 #port-cont button img{
