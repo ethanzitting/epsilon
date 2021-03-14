@@ -59,11 +59,11 @@ body {
 
 
 .secondary {
-  color: #2c8375 !important;
+  color: #009A8F !important;
 }
 
 .back-secondary {
-  background-color:#2c8375 !important;
+  background-color:#009A8F !important;
 }
 
 .tertiary {
@@ -124,6 +124,26 @@ main {
 .cone {
   width: 15vw;
 }
+
+/* Home */
+.home-main h1 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  padding-top: 28px;
+}
+
+body, .home-main {
+  width: 100%;
+  padding: none !important;
+  margin: 0 !important;
+}
+
+.home-main .container-fluid {
+  margin: 0 !important;
+}
+
+
 
 /* Past Work */
 #port-cont button img{
