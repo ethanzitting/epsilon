@@ -44,42 +44,91 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <a href="index.html" class="navbar-brand"><img src="images/logos/long-logo.png" height="50px"></a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a href="index.html" class="navbar-brand"><img src="images/logos/long-logo.png" height="50px"></a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item" id="home">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item" id="home">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
 
-            <li class="nav-item" id="services">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
+          <li class="nav-item" id="services">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
 
-            <li class="nav-item" id="contact">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+          <li class="nav-item" id="contact">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
 
-            <li class="nav-item" id="past-work">
-              <a href="past-work.html" class="nav-link">Past Work</a>
-            </li>
+          <li class="nav-item" id="past-work">
+            <a href="past-work.html" class="nav-link">Past Work</a>
+          </li>
 
-            <li class="nav-item active" id="meet-the-team">
-              <a href="meet-the-team.html" class="nav-link">Meet the Team</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item active" id="meet-the-team">
+            <a href="meet-the-team.html" class="nav-link">Meet the Team</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
 
-    <main>
-      <div class="coneDiv">
-        <img class="cone" src="./images/cone.png"/>
-        <p>Meet The Team Page Under Construction</p>
+    <main class="meet-the-team">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 col-sm-12">
+            <div class="container-fluid">
+
+              <div class="row">
+                <div class="col-12">
+                  <img src="./images/team.png"  id="team-shot">
+                </div>
+              </div>
+
+              <!-- Names -->
+              <div class="row">
+                <div class="col-6 ethan text-center top-slim">
+                  <h3>Ethan Zitting</h3>
+                </div>
+                <div class="col-6 text-center top-slim">
+                  <h3>Kenton French</h3>
+                </div>
+              </div>
+
+              <!--Intros-->
+              <div class="row">
+                <div class="col-6 ethan slim">
+                  I'm a small-town boy with big-city dreams.
+                </div>
+                <div class="col-6 slim">
+                  Much like the frontal lobe, I control executive function.
+                </div>
+              </div>
+              
+              <!--Descriptions-->
+              <div class="row">
+                <div class="col-6 ethan slim">
+                  A lot of things come easy to me.
+                  Starting a company: easy.
+                  Managing complex projects: Easy.
+                  Building Innovative and beautiful websites: EASY.
+                  Producing unsatisfactory products: now that is a real struggle for me.
+                </div>
+                <div class="col-6 slim">
+                  Business operations and social dynamics can often become overly 
+                  complicated as a company growns. Where do I come in? I can help
+                  facilitate connection and communication. Management ot teams, employees to employees, 
+                  you to clients, computers to POS systems, etc.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
       </div>
     </main>
 
@@ -92,6 +141,6 @@
     <!-- Bootstrap JS-->
     <script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- My JS -->
-    <script src="./main.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -144,6 +144,33 @@ main {
   margin: 5px;
 }
 
+/* Meet the Team */
+#team-shot {
+  border-radius: 18px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.ethan {
+  border-right: 2px solid #2c8375 !important;
+  text-align: right;
+}
+
+.top-slim {
+  padding-top: 0px !important;
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+}
+
+.slim {
+  padding-top: 20px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 
 /*
 ======================================

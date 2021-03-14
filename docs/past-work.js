@@ -1,3 +1,6 @@
+// TODO
+// Implement Load-As-You go effect where the images fade in as your scroll down.
+// Add a Back to Top Button
 
 // Custom utility function to replace JQuery's
 const $ = (element) => {
