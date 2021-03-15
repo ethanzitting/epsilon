@@ -77,33 +77,22 @@
 
 
     <main>
-    <!-- This div holds the content for each page and is generated with JS -->
-    <div class="coneDiv">
-      <img class="cone" src="./images/cone.png"/>
-      <p>Contact Page Under Construction</p>
-    </div>
-
-    <!--
-      <div id="formDiv">
-        <form
-        action="https://formspree.io/f/xyybvdnn"
-        method="POST"
-      >
-        <label>
-          Your email:
-          <input type="text" name="_replyto">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-      
-         your other form fields go here
-      
-        <button type="submit">Send</button>
-      </form>
+      <div class="container limit-width">
+        <h1>Send us an email!</h1>
+        <h3>We'll send you one back!</h3>
+        <form action="https://formspree.io/f/xyybvdnn" method="POST">
+          <div class="form-floating mb-3">
+            <label for="emailInput" class="form-label">Your Email</label>
+            <input type="email" class="form-control" name="_replyto" id="emailInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="messageInput" class="form-label">Your message:</label>
+            <textarea class="form-control" id="messageInput" name="message" rows="3" placeholder="Your message here."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
       </div>
-    -->
+
     </main>
 
     <!-- Footer -->
@@ -113,8 +102,8 @@
     <!-- JQuery JS-->
     <script src="./jquery/dist/jquery.js"></script>
     <!-- Bootstrap JS-->
-    <script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <!-- My JS -->
-    <script src="./main.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

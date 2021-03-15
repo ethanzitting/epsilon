@@ -167,6 +167,12 @@ body, .home-main {
   padding: 0;
 }
 
+/* Contact */
+.limit-width {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Past Work */
 #port-cont button img{
   max-height: 200px;
