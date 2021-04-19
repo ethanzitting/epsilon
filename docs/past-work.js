@@ -173,13 +173,6 @@ const designs = [
 ]
 const websites = [
   {
-    description: "Ethan's Personal Website",
-    alt: "A Preview of ethanzitting.com",
-    url: 'https://ethanzitting.com',
-    desktopSrc: './images/websites/personal-dt.png',
-    mobileSrc: './images/websites/personal-mb.png',
-  },
-  {
     description: "A To-Do List App",
     alt: "Preview of ethanzitting.github.io/to-do-app/",
     url: 'https://ethanzitting.github.io/to-do-app/',
