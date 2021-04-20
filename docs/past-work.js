@@ -173,6 +173,20 @@ const designs = [
 ]
 const websites = [
   {
+    description: "A Website for Silver Ridge Contracting",
+    alt: "preview of SRC's website for Epsilon Integrated Solutions",
+    url: "https://silverridgecontracting.com",
+    desktopSrc: './images/websites/silver-dt.png',
+    mobileSrc: './images/websites/silver-mb.png',
+  },
+  {
+    description: "A Weather Forecast App",
+    alt: "preview of the weather app for Epsilon Integrated Solutions",
+    url: "https://ethanzitting.github.io/weather-app/",
+    desktopSrc: './images/websites/weather-dt.png',
+    mobileSrc: './images/websites/weather-mb.png',
+  },
+  {
     description: "A To-Do List App",
     alt: "Preview of ethanzitting.github.io/to-do-app/",
     url: 'https://ethanzitting.github.io/to-do-app/',
@@ -185,13 +199,6 @@ const websites = [
     url: 'https://ethanzitting.github.io/ACME-Cafe/',
     desktopSrc: './images/websites/acme-dt.png',
     mobileSrc: './images/websites/acme-mb.png',
-  },
-  {
-    description: "A Simple Game of Tic-Tac-Toe",
-    alt: "preview of https://ethanzitting.github.io/tic-tac-toe/",
-    url: 'https://ethanzitting.github.io/tic-tac-toe/',
-    desktopSrc: './images/websites/tic-tac-dt.png',
-    mobileSrc: './images/websites/tic-tac-mb.png',
   }
 ]
 
