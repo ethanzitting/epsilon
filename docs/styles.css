@@ -167,6 +167,23 @@ body, .home-main {
   padding: 0;
 }
 
+.arrow {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 44px;
+  top: 22px;
+  border-right: 3px solid #F3F3F3;
+  border-bottom: 3px solid #F3F3F3;
+  pointer-events: none;
+  transform: rotate(45deg);
+  transition: transform .15s ease-in-out;
+}
+
+.up {
+  transform: rotate(225deg);
+}
+
 /* Contact */
 .limit-width {
   max-width: 600px;
