@@ -38,7 +38,7 @@ const makeDiv = (divObject) => {
 
 const main = $('main');
 
-const designsSrc = "./images/designs/";
+const designsSrc = "./assets/images/designs/";
 const designs = [
   {
     link: "alive.jpg",
@@ -171,34 +171,36 @@ const designs = [
     alt: ""
   }
 ]
+
+const websitesSrc = './assets/images/websites/';
 const websites = [
   {
     description: "A Website for Silver Ridge Contracting",
     alt: "preview of SRC's website for Epsilon Integrated Solutions",
     url: "https://silverridgecontracting.com",
-    desktopSrc: './images/websites/silver-dt.png',
-    mobileSrc: './images/websites/silver-mb.png',
+    desktopSrc: 'silver-dt.png',
+    mobileSrc: 'silver-mb.png',
   },
   {
     description: "A Weather Forecast App",
     alt: "preview of the weather app for Epsilon Integrated Solutions",
     url: "https://ethanzitting.github.io/weather-app/",
-    desktopSrc: './images/websites/weather-dt.png',
-    mobileSrc: './images/websites/weather-mb.png',
+    desktopSrc: 'weather-dt.png',
+    mobileSrc: 'weather-mb.png',
   },
   {
     description: "A To-Do List App",
     alt: "Preview of ethanzitting.github.io/to-do-app/",
     url: 'https://ethanzitting.github.io/to-do-app/',
-    desktopSrc: './images/websites/to-do-dt.png',
-    mobileSrc: './images/websites/to-do-mb.png',
+    desktopSrc: 'to-do-dt.png',
+    mobileSrc: 'to-do-mb.png',
   },
   {
     description: "A Joke Restaurant Page",
     alt: "preview of https://ethanzitting.github.io/ACME-Cafe/",
     url: 'https://ethanzitting.github.io/ACME-Cafe/',
-    desktopSrc: './images/websites/acme-dt.png',
-    mobileSrc: './images/websites/acme-mb.png',
+    desktopSrc: 'acme-dt.png',
+    mobileSrc: 'acme-mb.png',
   }
 ]
 
@@ -319,13 +321,13 @@ const loadWebsites = () => {
     if (mobileCheck) {
       websiteElem.innerHTML = `
       <a href="${websites[i].url}" target="_blank">
-        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websites[i].mobileSrc}" alt="${designs[i].alt}">
+        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websitesSrc}${websites[i].mobileSrc}" alt="${designs[i].alt}">
       </a>
       `
     } else {
       websiteElem.innerHTML = `
       <a href="${websites[i].url}" class="" target="_blank">
-        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websites[i].desktopSrc}" alt="${designs[i].alt}">
+        <img id="website-${i}-img" class="img-thumbnail website-thumbnail" src="${websitesSrc}${websites[i].desktopSrc}" alt="${designs[i].alt}">
       </a>
       `
     }
